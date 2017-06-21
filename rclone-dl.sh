@@ -27,9 +27,9 @@ case $CHOICE in
             bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone freebsd-386 zip
             unzip -o rclone-*-freebsd-386.zip
             cd rclone-*-freebsd-386
-            sudo cp rclone /usr/bin/
-            sudo chown root:root /usr/bin/rclone
-            sudo chmod 755 /usr/bin/rclone
+            sudo cp rclone /usr/local/sbin/
+            sudo chown root:root /usr/local/sbin/rclone
+            sudo chmod 755 /usr/local/sbin/rclone
             ;;
         2)
             echo "Installing rclone FreeBSD AMD 64"
@@ -37,9 +37,9 @@ case $CHOICE in
             bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone free-amd64 zip
             unzip -o rclone-*-freebsd-amd64.zip
             cd rclone-*-freebsd-amd64
-            sudo cp rclone /usr/bin/
-            sudo chown root:root /usr/bin/rclone
-            sudo chmod 755 /usr/bin/rclone
+            sudo cp rclone /usr/local/sbin
+            sudo chown root:root /usr/local/sbin/rclone
+            sudo chmod 755 /usr/local/sbin/rclone
             ;;
         3)
             echo "Installing rclone FreeBSD ARM"
@@ -49,7 +49,7 @@ case $CHOICE in
             cd rclone-*-freebsd-arm
             sudo cp rclone /usr/bin/
             sudo chown root:root /usr/bin/rclone
-            sudo chmod 755 /usr/bin/rclone
+            sudo chmod 755 /usr/local/sbin/rclone
             ;;
 
         4)
