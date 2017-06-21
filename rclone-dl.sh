@@ -48,7 +48,7 @@ case $CHOICE in
             unzip -o rclone-*-freebsd-arm.zip
             cd rclone-*-freebsd-arm
             sudo cp rclone /usr/local/sbin
-            sudo chown root:root /usr/bin/rclone
+            sudo chown root:root /usr/local/sbin/rclone
             sudo chmod 755 /usr/local/sbin/rclone
             ;;
 
