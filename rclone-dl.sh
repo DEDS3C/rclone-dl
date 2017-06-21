@@ -47,7 +47,7 @@ case $CHOICE in
             bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone freebsd-arm zip
             unzip -o rclone-*-freebsd-arm.zip
             cd rclone-*-freebsd-arm
-            sudo cp rclone /usr/bin/
+            sudo cp rclone /usr/local/sbin
             sudo chown root:root /usr/bin/rclone
             sudo chmod 755 /usr/local/sbin/rclone
             ;;
