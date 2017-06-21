@@ -22,9 +22,9 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            echo "Installing rclone FreeBSD i386  ..."
+            echo "Installing rclone FreeBSD i386"
             rm -rf rclone*.zip
-            bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-installer/master/rclone.sh) ncw/rclone freebsd-386 zip
+            bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone freebsd-386 zip
             unzip -o rclone-*-freebsd-386.zip
             cd rclone-*-freebsd-386
             sudo cp rclone /usr/bin/
@@ -34,7 +34,7 @@ case $CHOICE in
         2)
             echo "Installing rclone FreeBSD AMD 64"
             rm -rf rclone*.zip
-            bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-installer/master/rclone.sh) ncw/rclone free-amd64 zip
+            bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone free-amd64 zip
             unzip -o rclone-*-freebsd-amd64.zip
             cd rclone-*-freebsd-amd64
             sudo cp rclone /usr/bin/
@@ -44,7 +44,7 @@ case $CHOICE in
         3)
             echo "Installing rclone FreeBSD ARM"
             rm -rf rclone*.zip
-            bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-installer/master/rclone.sh) ncw/rclone freebsd-arm zip
+            bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone freebsd-arm zip
             unzip -o rclone-*-freebsd-arm.zip
             cd rclone-*-freebsd-arm
             sudo cp rclone /usr/bin/
@@ -56,7 +56,7 @@ case $CHOICE in
 
             echo "Installing rclone Linux i386"
             rm -rf rclone*.zip
-            bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-installer/master/rclone.sh) ncw/rclone linux-386 zip
+            bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone linux-386 zip
             unzip -o rclone-*-linux-386.zip
             cd rclone-*-linux-386
             sudo cp rclone /usr/bin/
@@ -64,9 +64,9 @@ case $CHOICE in
             sudo chmod 755 /usr/bin/rclone
             ;;
         5)
-            echo "Installing rclone Linux AMD 64"
+            echo "Installing rclone Linux AMD64"
             rm -rf rclone*.zip
-            bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-installer/master/rclone.sh) ncw/rclone linux-amd64 zip
+            bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone linux-amd64 zip
             unzip -o rclone-*-linux-amd64.zip
             cd rclone-*-linux-amd64
             sudo cp rclone /usr/bin/
@@ -77,7 +77,7 @@ case $CHOICE in
 
             echo "Installing rclone Linux ARM"
             rm -rf rclone*.zip
-            bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-installer/master/rclone.sh) ncw/rclone linux-arm zip
+            bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone linux-arm zip
             unzip -o rclone-*-linux-arm.zip
             cd rclone-*-linux-arm
             sudo cp rclone /usr/bin/
