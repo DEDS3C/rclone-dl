@@ -1,7 +1,7 @@
 HEIGHT=15
 WIDTH=60
 CHOICE_HEIGHT=7
-BACKTITLE=" Script by WhiteRose"
+BACKTITLE=" Script by DEDS3C"
 TITLE="rclone Installer "
 MENU="Choose one of the following options:"
 
