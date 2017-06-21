@@ -27,9 +27,11 @@ case $CHOICE in
             bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone freebsd-386 zip
             unzip -o rclone-*-freebsd-386.zip
             cd rclone-*-freebsd-386
-            sudo cp rclone /usr/local/sbin/
-            sudo chown root:root /usr/local/sbin/rclone
-            sudo chmod 755 /usr/local/sbin/rclone
+            echo "Please elevate to sudo / root in order to copy files to your bin folder"
+            su
+            cp rclone /usr/bin
+            chown $USER:$USER /usr/bin/rclone
+            chmod 755 /usr/bin/rclone
             ;;
         2)
             echo "Installing rclone FreeBSD AMD 64"
@@ -37,9 +39,11 @@ case $CHOICE in
             bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone free-amd64 zip
             unzip -o rclone-*-freebsd-amd64.zip
             cd rclone-*-freebsd-amd64
-            sudo cp rclone /usr/local/sbin
-            sudo chown root:root /usr/local/sbin/rclone
-            sudo chmod 755 /usr/local/sbin/rclone
+            echo "Please elevate to sudo / root in order to copy files to your bin folder"
+            su
+            cp rclone /usr/bin
+            chown $USER:$USER /usr/bin/rclone
+            chmod 755 /usr/bin/rclone
             ;;
         3)
             echo "Installing rclone FreeBSD ARM"
@@ -47,9 +51,11 @@ case $CHOICE in
             bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone freebsd-arm zip
             unzip -o rclone-*-freebsd-arm.zip
             cd rclone-*-freebsd-arm
-            sudo cp rclone /usr/local/sbin
-            sudo chown root:root /usr/local/sbin/rclone
-            sudo chmod 755 /usr/local/sbin/rclone
+            echo "Please elevate to sudo / root in order to copy files to your bin folder"
+            su
+            cp rclone /usr/local/sbin
+            chown $USER:$USEr /usr/bin/rclone
+            chmod 755 /usr/bin/rclone
             ;;
 
         4)
@@ -68,10 +74,12 @@ case $CHOICE in
             rm -rf rclone*.zip
             bash <(curl -Ss https://raw.githubusercontent.com/DEDS3C/rclone-dl/master/rclone.sh) ncw/rclone linux-amd64 zip
             unzip -o rclone-*-linux-amd64.zip
+            echo "Please elevate to sudo / root in order to copy files to your bin folder"
+            su
             cd rclone-*-linux-amd64
-            sudo cp rclone /usr/bin/
-            sudo chown root:root /usr/bin/rclone
-            sudo chmod 755 /usr/bin/rclone
+            cp rclone /usr/bin/
+            chown $USER:$USER /usr/bin/rclone
+            chmod 755 /usr/bin/rclone
             ;;
         6)
 
